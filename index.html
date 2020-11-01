@@ -1,0 +1,247 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>颜色测试</title>
+    <style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.left-box,.right-box{
+ 			width: 50%;
+  			height: 100%;
+  			float: left;//设置两个盒子float:left
+		}
+
+		.box{
+			width: screen.width;
+  			height: screen.height;
+  			
+　			
+		}
+		.btn{
+			display: inline-blocki;/*让a标签变成行内块级元素*/
+			height: 30px;
+			line-height: 30px;
+			border:1px solid #ccc;
+			text-decoration: none;
+			color: #333;
+			padding:  5px;
+			font-size: 12px;
+		}
+		.btn:active{
+			background-color: #666;
+			color: white;
+		}
+	</style>
+</head>
+
+
+<body>
+<div class="left-box">
+    你好呀，欢迎参加“社交颜色”项目!
+    <p>1.用你的感受和直觉对朋友圈图片进行颜色匹配，从下边的色盘中进行颜色拾取</p>
+    <p>
+        <input type="color" id="bgcolor" value="#00ff00" oninput="changeBg(bgcolor.value)">
+    </p>
+    <p>
+        2.选择你选取颜色时的衡量维度（请多选并按照顺序排列），如有补充，请在最后一栏填入
+    </p>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    <p>
+        <input type="texttype" list="texttype">
+        <datalist id="texttype">
+            <option>第一眼看到的颜色</option>
+            <option>最大占比的颜色</option>
+            <option>图片的色调</option>
+            <option>人物/动物/卡通形象的表情</option>
+            <option>人物/动物/卡通形象的动作</option>
+            <option>物品的种类</option>
+            <option>环境的氛围</option>
+            <option>图片中的文字</option>
+            <option>季节/昼夜</option>
+        </datalist>
+    </p>
+    <p>
+        <input type="texttype">
+    </p>
+    <p>
+        3.完成上面两步，请截图该页面,并发送给测试工作人员。
+    </p>
+    
+</div>
+
+<div class="right-box">
+	<img src="images/1.jpg" alt="pic" id="img" height=500px>
+	<p>
+		<a href="javascript:;" class="btn" data-control="last">上一页</a>
+		<a href="javascript:;" class="btn" data-control="next">下一页</a>
+	</p>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	var imgs = [//定义数组用来存储图片的路径
+	'images/1.jpg',
+	'images/2.jpg',
+	'images/3.jpg',
+	'images/4.jpg',
+	'images/5.jpg',
+	'images/6.jpg',
+	'images/7.jpg',
+	'images/8.jpg',
+	];
+	var index = 0;//设置第一张图片的索引值为0
+	var len = imgs.length;//获取存储图片数组的长度
+	$('.btn').on('click',function(){//绑定点击事件
+		if($(this).data('control') === "last"){
+		
+			index = Math.max(0,--index);
+		}else index = Math.min(len-1,++index);
+		document.title = (index+1)+'/'+len;
+		$('#img').attr('src',imgs[index]);
+	});
+</script>
+
+
+</body>
+
+<script Language="JavaScript">
+    function changeBg(color){
+        document.body.style.backgroundColor=color
+    }
+</script>
+<script type="text/javascript" src="https://lib.baomitu.com/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+<a id="link"></a>
+
+
+<script  type="text/javascript" >
+    $(document).ready( function(){
+
+        //html2canvas(document.querySelector("#capture")).then(canvas => {
+           // document.body.appendChild(canvas)
+        //});
+
+        $(".example1").on("click", function(event) {
+            //event.preventDefault();
+            console.log("hi?")
+            html2canvas(document.querySelector("body")).then(canvas=>{
+                var image = canvas.toDataURL().replace("image/png", "image/octet-stream");
+                var link = document.getElementById('link');
+                link.setAttribute('download', 'screenshot.png');
+                link.setAttribute('href', image);
+                link.click();
+                document.body.appendChild(canvas);
+            })
+        });
+
+    });
+
+</script>
+
+</html>
+
